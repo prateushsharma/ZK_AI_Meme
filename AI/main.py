@@ -11,6 +11,7 @@ import os
 from datetime import datetime
 import textwrap
 from dotenv import load_dotenv
+import subprocess
 
 class ScienceTopicVisualizer:
     # Define topics as class attribute
@@ -253,6 +254,9 @@ class ScienceTopicVisualizer:
                         print(f"\nImage saved successfully at: {saved_path}")
                         print(f"\nImage_url: {image_url}")
                         print(f"\nCaption: {highlight}")
+                        args = ["python3", "generate_hashes.py", "a", "b", "c"]
+                        result = subprocess.run(args, capture_output=True, text=True)
+                        print(result.stdout)
 
                 # Wait for the specified interval
                 time.sleep(interval_seconds)

@@ -1,0 +1,9 @@
+1,1,0,main.is_valid
+2,2,0,main.model_hash[0]
+3,-1,0,main.model_hash[1]
+4,3,0,main.prompt_hash[0]
+5,-1,0,main.prompt_hash[1]
+6,4,0,main.meme_hash[0]
+7,-1,0,main.meme_hash[1]
+8,5,0,main.eq0
+9,6,0,main.eq1

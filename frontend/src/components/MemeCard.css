@@ -1,0 +1,97 @@
+.meme-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    border: 1px solid #333;
+  }
+  
+  .meme-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .meme-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .meme-info {
+    padding: 1rem;
+  }
+  
+  .meme-info h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .meme-info p {
+    color: #888;
+    margin: 0.25rem 0;
+  }
+  
+  .meme-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .buy-button,
+  .edit-button,
+  .delist-button {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+  }
+  
+  .buy-button {
+    background-color: #646cff;
+    color: white;
+  }
+  
+  .buy-button:hover {
+    background-color: #535bf2;
+  }
+  
+  .edit-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .delist-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .delist-button:hover {
+    background-color: #d32f2f;
+  }
+  .tip-button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #646cff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+  }
+  
+  .tip-button:hover {
+    background-color: #535bf2;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    color: #888;
+  }

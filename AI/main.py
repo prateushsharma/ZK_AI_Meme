@@ -258,6 +258,14 @@ class ScienceTopicVisualizer:
                         result = subprocess.run(args, capture_output=True, text=True)
                         print(result.stdout)
 
+                        args = ["python3", "run_verification.py"]
+                        result = subprocess.run(args, capture_output=True, text=True)
+                        print(result.stdout)
+
+
+                        args = ["python3", "contract_interact.py", "Sample", image_url]
+                        result = subprocess.run(args, capture_output=True, text=True)
+                        print(result.stdout)
                         
 
                 # Wait for the specified interval

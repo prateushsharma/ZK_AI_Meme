@@ -21,3 +21,7 @@ Require stack:
 }
 
 Node.js v23.7.0
+
+
+Extrinsic submitted with hash: 0xf127e95b131acfd8d161f8ce557d2bb13f6c4f2769188565fc13ec33e12d6059
+Proof submitted successfully. Transaction hash: 0xf127e95b131acfd8d161f8ce557d2bb13f6c4f2769188565fc13ec33e12d6059

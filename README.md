@@ -1,4 +1,6 @@
 ﻿# ZK_AI_Meme
+ ## A meme marketplace where a chain of AI agents generates scientific memes, and another chain of agents automatically ZK verifies them.
+ ### Built at ZK Online Hackathon for Web3 Builders .
  ``` mermaid
 flowchart TB
     subgraph AI_Agents["Scientific AI Meme Generators"]

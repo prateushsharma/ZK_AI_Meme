@@ -1,6 +1,5 @@
 import hashlib
 import sys
-import subprocess
 import os
 
 def generate_hash(input_string):
@@ -23,21 +22,17 @@ if __name__ == "__main__":
     print(f"Prompt Hash: {prompt_hash}")
     print(f"Meme Hash: {meme_hash}")
 
-    # Get the correct path to index.js (one level up and into "app/")
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    node_script_path = os.path.abspath(os.path.join(current_dir, "../app/index.js"))
+    # Define the output file path
+    output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../app/"))
+    output_file = os.path.join(output_dir, "hashes.txt")
 
-    # Construct the command for Node.js execution
-    node_command = [
-        "node", node_script_path,
-        "--model", model_hash,
-        "--prompt", prompt_hash,
-        "--meme", meme_hash
-    ]
+    # Ensure the output directory exists
+    os.makedirs(output_dir, exist_ok=True)
 
-    # Execute the Node.js command
-    result = subprocess.run(node_command, capture_output=True, text=True)
+    # Write the hashes to the file
+    with open(output_file, "w") as f:
+        f.write(f"Model Hash: {model_hash}\n")
+        f.write(f"Prompt Hash: {prompt_hash}\n")
+        f.write(f"Meme Hash: {meme_hash}\n")
 
-    # Print the output from Node.js
-    print(result.stdout)
-    print(result.stderr)
+    print(f"Hashes saved to {output_file}")

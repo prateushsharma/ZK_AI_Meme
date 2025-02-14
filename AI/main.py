@@ -258,6 +258,8 @@ class ScienceTopicVisualizer:
                         result = subprocess.run(args, capture_output=True, text=True)
                         print(result.stdout)
 
+                        
+
                 # Wait for the specified interval
                 time.sleep(interval_seconds)
                 

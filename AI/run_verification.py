@@ -49,7 +49,8 @@ node_command = [
 try:
     result = subprocess.run(node_command, capture_output=True, text=True)
     output = result.stdout + "\n" + result.stderr
-
+    print(output)
+    output = result.stdout
     # Ensure "AI" directory exists before saving the result
     os.makedirs(ai_dir, exist_ok=True)
 
